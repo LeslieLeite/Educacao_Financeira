@@ -1,0 +1,165 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --cor-site: #1C4FAE;
+    --cor-site1: #2365DE;
+    --cor-site2: #6994E3;
+    --cor-site3: #0F2B5E;
+    --cor-site4: #457ABF;
+    --cor-site5: #81B7DE;
+    --tamanho: calc(100% - 2em);
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    background-color: white;
+}
+
+.header_logo {
+    width: 10em;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+
+#hamburguer {
+    background-color: #00A6F0;
+    color: #1878C2;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+
+}
+
+.header_nav {  
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+ul {
+    margin: 0;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 1em;
+}
+.header_nav a {
+    color: #3473A3;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+}
+
+
+.text-center {
+    text-transform: uppercase;
+       
+}
+
+.text-center a {
+    text-decoration: none;
+    color: #2115ED;
+}
+
+.sobre {
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 40%);
+}
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.projetos {
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 60%);
+   
+}
+
+ #projeto video {
+   width: var(--tamanho);  
+} 
+
+footer {
+    background-color:color-mix(in srgb, #196BF0,white    30%);
+    padding: .8em;
+    text-align: center;
+
+}
+
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.tamanho  {
+    width: 2.5em; 
+  }
+ 
+.texto_footer{
+      margin: 0;
+      padding-top: .8rem;
+      color:#2115ED;
+      font-size: 1.5em;
+    
+  }
+
+
+
+@media screen and (min-width: 36em) {/* maior que 576px*/
+    #hamburguer {
+        display: none;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        
+       
+    }
+
+    .header_nav {
+        display: block;
+
+    }
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: 1em;
+
+    }
+    .header_nav li {
+        display: inline-block;
+    }
+
+    .header_logo {
+        margin-left: 5em;
+    }
+
+    
+     .footer_nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5em;
+    }
+   
+}
