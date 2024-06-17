@@ -102,7 +102,7 @@ ul {
 
 
 footer {
-    background-color:color-mix(in srgb, #728A72,white    30%);
+    background-color: #4F674F;
     padding: .8em;
     text-align: center;
 
@@ -122,7 +122,7 @@ footer {
 .texto_footer{
       margin: 0;
       padding-top: .8rem;
-      color:#526A54;
+      color:#0f3112;
       font-size: 1.5em;
     
   }
