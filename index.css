@@ -2,13 +2,7 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-:root {
-    --cor-site: #1C4FAE;
-    --cor-site1: #2365DE;
-    --cor-site2: #6994E3;
-    --cor-site3: #0F2B5E;
-    --cor-site4: #457ABF;
-    --cor-site5: #81B7DE;
+:root {   
     --tamanho: calc(100% - 2em);
 }
 
@@ -25,10 +19,9 @@ html {
     
 }
 
-
 #hamburguer {
-    background-color: #00A6F0;
-    color: #1878C2;
+    background-color: #526A54;
+    color: #526A54;
     display: block;
     text-align: center;
     padding: .3em;
@@ -57,7 +50,7 @@ ul {
     font-size: 1em;
 }
 .header_nav a {
-    color: #3473A3;
+    color: #526A54;
     text-decoration: none;
     display: block;
     padding: 1em;
@@ -72,11 +65,11 @@ ul {
 
 .text-center a {
     text-decoration: none;
-    color: #2115ED;
+    color: #526A54;
 }
 
 .sobre {
-    background-color: color-mix(in srgb, var(--cor-site), #ffffff 40%);
+    background-color: color-mix(in srgb, #C6D9C5, #ffffff 10%);
 }
 
 #sobre {
@@ -86,18 +79,30 @@ ul {
     min-height: 100vh;
 
 }
+ #sobre img {
+    border-radius: 5px;
+ }
 
 .projetos {
-    background-color: color-mix(in srgb, var(--cor-site), #ffffff 60%);
+    background-color: color-mix(in srgb, #B7CDB8, #ffffff 60%);
    
 }
 
+
  #projeto video {
-   width: var(--tamanho);  
+   width: var(--tamanho); 
+    
 } 
 
+.projetos p {
+    color:#257F54;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
 footer {
-    background-color:color-mix(in srgb, #196BF0,white    30%);
+    background-color:color-mix(in srgb, #728A72,white    30%);
     padding: .8em;
     text-align: center;
 
@@ -117,7 +122,7 @@ footer {
 .texto_footer{
       margin: 0;
       padding-top: .8rem;
-      color:#2115ED;
+      color:#526A54;
       font-size: 1.5em;
     
   }
